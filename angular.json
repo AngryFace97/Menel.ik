@@ -20,6 +20,7 @@
             "outputPath": "dist/menelIK",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/menelIK/",
             "polyfills": [
               "zone.js"
             ],
