@@ -7,19 +7,27 @@ import { GameComponent } from './app/game/game.component';
 import { routes } from './app/app.routes';
 import { UserService } from './app/user.service';
 import { FormsModule } from '@angular/forms';
+import { StatisticsComponent } from './app/game/components/statistics/statistics.component';
+import { TimeComponent } from './app/game/components/time/time.component';
+import { PlaygroundComponent } from './app/game/components/playground/playground.component';
+import { StatisticsService } from './app/game/services/statistics.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    GameComponent,
+    StatisticsComponent,
+    TimeComponent,
+    PlaygroundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [UserService],
+  providers: [UserService, StatisticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

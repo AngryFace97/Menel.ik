@@ -1,0 +1,23 @@
+.button-section,
+.bottom-button-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.top-button,
+.bottom-button {
+  padding: 10px;
+  margin: 0 8px;
+  background-color: #012140;
+  color: white;
+  border-radius: 8px;
+  border: 4px solid #0a0e14;
+  cursor: pointer;
+}
+
+.center-image {
+  margin-bottom: -200px;
+  display: flex;
+  justify-content: center;
+}
